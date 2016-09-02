@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "阻生和世敏这两个大逗逼"
 date:   2016-09-02 15:21:42 +0800
 categories: jekyll update
 ---
