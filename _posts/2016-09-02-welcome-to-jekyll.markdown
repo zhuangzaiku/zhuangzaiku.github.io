@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "阻生和世敏这两个大逗逼"
+title:  "My first article"
 date:   2016-09-02 15:21:42 +0800
 categories: jekyll update
 ---
