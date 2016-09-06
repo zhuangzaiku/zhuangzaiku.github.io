@@ -5,20 +5,20 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: pygments
 markdown: kramdown
-disqus: Ronan
-google_analytics: Ronan
-title: Ronan
+disqus: 庄小酷
+google_analytics: 庄小酷
+title: 庄小酷
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: Ronan
+      title: 庄小酷
 
 description: Stylish Jekyll Theme
 author:
-  name: Ronan
+  name: 庄小酷
   email: zzkkugou@gmail.com
   github: zhuangzaiku
   twitter: Kugou
