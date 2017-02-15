@@ -1,4 +1,4 @@
-dbyll dev
+dbyll dev3
 =====
 
 Open source stylish, minimalistic theme for jekyll.  
