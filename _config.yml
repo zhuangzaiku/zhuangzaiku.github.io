@@ -1,40 +1,12 @@
-# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+# Site settings
+title: Ronan
+email: zzkkugou@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  心若有桃源，何处不是水云间。
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://zhuangzaiku.github.io" # the base hostname & protocol for your site
+twitter_username: Ronan
+github_username:  zhuangzaiku
 
-paginate: 10 # pagination based on number of posts
-paginate_path: "page:num"
-exclude: ["README.md"] # files to exclude
-highlighter: pygments
+# Build settings
 markdown: kramdown
-disqus: 庄小酷
-google_analytics: 庄小酷
-title: 庄小酷
-
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      title: 庄小酷
-
-description: Stylish Jekyll Theme
-author:
-  name: 庄小酷
-  email: zzkkugou@gmail.com
-  github: zhuangzaiku
-  twitter: Kugou
-  pinterest: asd123
-  linkedin: asd123
-  bio: 心若有桃园，何处不是水云间。
-  email_md5: 726351295ec82e145928582f595aa3aa
-
-rss_path: feed.xml
-categories_path: categories.html
-tags_path: tags.html
-
-# set it as url of an image
-# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
-
-BASE_PATH:
-
-gems:
-  - jekyll-paginate

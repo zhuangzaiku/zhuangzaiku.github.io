@@ -1,74 +1,64 @@
 ---
-layout: page
-tagline:
+layout: default
 ---
 
-{% for post in paginator.posts %}
 
-<article class="home">
 
-  <span class="post-date">
-    {% assign d = post.date | date: "%d" | plus:'0' %}
-    {{ post.date | date: "%B" }}
-    {% case d %}
-    {% when 1 or 21 or 31 %}{{ d }}st,
-    {% when 2 or 22 %}{{ d }}nd,
-    {% when 3 or 23 %}{{ d }}rd,
-    {% else %}{{ d }}th,
-    {% endcase %}
-    {{ post.date | date: "%Y" }}
-  </span>
+<!-- One -->
+    <section id="one">
+        <div class="container">
+            <header class="major">
+                <h2>Read Only</h2>
+                <p>Just an incredibly simple responsive site<br />
+                template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p>
+            </header>
+            <p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+        </div>
+    </section>
 
-  <h2>
-    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-  </h2>
+<!-- Two -->
+    <section id="two">
+        <div class="container">
+            <h3>Things I Can Do</h3>
+            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
+            <ul class="feature-icons">
+                <li class="fa-code">Write all the code</li>
+                <li class="fa-cubes">Stack small boxes</li>
+                <li class="fa-book">Read books and stuff</li>
+                <li class="fa-coffee">Drink much coffee</li>
+                <li class="fa-bolt">Lightning bolt</li>
+                <li class="fa-users">Shadow clone technique</li>
+            </ul>
+        </div>
+    </section>
 
-  <div>
-    {% if post.fullview %}
-    {{ post.content }}
-    {% else %}
-    {% if post.shortinfo %}
-    {{ post.shortinfo }}
-    {% elsif post.description %}
-    {{ post.description }}
-    {% else %}
-    {{ post.excerpt }}
-    {% endif %}
-    {% endif %}
-  </div>
-
-</article>
-{% endfor %}
-<hr/>
-
-<ul class="pager"> 
-
-  {% if paginator.previous_page %}
-  <li class="previous">
-    {% if paginator.previous_page == 1 %}
-    <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
-    {% else %}
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
-    {% endif %}
-  </li>
-  {% else %}
-  <li class="previous disabled">
-    <a>&larr; Newer</a>
-  </li>
-  {% endif %}
-  
-  <li>
-    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  </li>
-
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">Older &rarr;</a>
-  </li>
-  {% else %}
-  <li class="next disabled">
-    <a>Older &rarr;</a>        
-  </li>
-  {% endif %}
-
-</ul>
+<!-- Three -->
+    <section id="three">
+        <div class="container">
+            <h3>A Few Accomplishments</h3>
+            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+            <div class="features">
+                <article>
+                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                    <div class="inner">
+                        <h4>Possibly broke spacetime</h4>
+                        <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+                    </div>
+                </article>
+                <article>
+                    <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+                    <div class="inner">
+                        <h4>Terraformed a small moon</h4>
+                        <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+                    </div>
+                </article>
+                <article>
+                    <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+                    <div class="inner">
+                        <h4>Snapped dark matter in the wild</h4>
+                        <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
