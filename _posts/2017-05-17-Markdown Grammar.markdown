@@ -4,7 +4,7 @@ layout: post
 
 # Markdown grammar
 
-![Mou icon](http://25.io/mou/Mou_128.png =100x100)
+![Mou icon](http://25.io/mou/Mou_128.png)
 
 ## Overview
 
