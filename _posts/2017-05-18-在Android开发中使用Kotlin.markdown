@@ -10,7 +10,7 @@ Using Kotlin with a new project requires just one extra click in the New Project
 2. On the first screen, check Include Kotlin support. That's the only difference.
 3. Click Next and continue through the wizard until you're done.
 
-![](../_site/images/kotlin-new-project_2x.png)
+![](../../../images/kotlin-new-project_2x.png)
 
 When you select an activity template, it will be provided in Kotlin code. Currently, only some the templates for the Phone and Tablet form factor are provided with idiomatic Kotlin code. The rest are automatically converted to Kotlin from the Java templates—you still get Kotlin code throughout, but some of the code might not use Kotlin's best language features yet.
 
@@ -20,11 +20,11 @@ Add Kotlin to an existing project
 ------
 If you want to add Kotlin code to an existing project, simply click File > New and select one of the various Android templates. If you don't see the list of templates in this menu, first open the Project window and select your app module.
 
-![](../_site/images/new-template-menu_2x.png)
+![](../../../images/new-template-menu_2x.png)
 
 In the wizard that appears, select Kotlin for the Source language.
 
-![](../_site/images/kotlin-new-activity_2x.png)
+![](../../../images/kotlin-new-activity_2x.png)
 
 Continue through the wizard, and you're done.
 
@@ -45,7 +45,7 @@ In Android Studio 3.0, open a Java file and select Code > Convert Java File to K
 
 Or, create a new Kotlin file (File > New > Kotlin File/Class), and then paste your Java code into that file—when prompted, click Yes to convert the code to Kotlin. You can check Don't show this dialog next time, which makes it easy to dump Java code snippets into your Kotlin files.
 
-![](../_site/images/kotlin-convert_2x.png)
+![](../../../images/kotlin-convert_2x.png)
 
 Use Android APIs with Kotlin
 ------
