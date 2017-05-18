@@ -33,10 +33,11 @@ Alternatively, you can click File > New > Kotlin File/Class to create a basic fi
 By default, new Kotlin files are saved into src/main/java/. You might find it's easier to see both Kotlin and Java files in one location. But if you'd prefer to separate your Kotlin files from your Java files, you can put Kotlin files under src/main/kotlin/ instead. If you do, then you need to include this directory in your sourceSets configuration:
 
 	android {
-   		sourceSets {
-       		main.java.srcDirs += 'src/main/kotlin'
-   		}
-	}
+       sourceSets {
+           main.java.srcDirs += 'src/main/kotlin'
+       }
+    }
+
 	
 Convert existing Java code to Kotlin code
 ------
@@ -56,70 +57,70 @@ Here are a few examples of what it looks like to call Android APIs in Kotlin, co
 Declare Activity in Kotlin    
 
 	class MyActivity : AppCompatActivity() {
-  		override fun onCreate(savedInstanceState: Bundle?) {
-    		super.onCreate(savedInstanceState)
-    		setContentView(R.layout.activity)
-  		}
-	}
+      override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity)
+      }
+    }
 	
 Declare Activity in Java
 
 	public class MyActivity extends AppCompatActivity {
-  		@Override
-  		protected void onCreate(Bundle savedInstanceState) {
-    		super.onCreate(savedInstanceState);
-    		setContentView(R.layout.activity);
-  		}
-	}
+      @Override
+      protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity);
+      }
+    }
 	
 On-click listener in Kotlin
 
 	val fab = findViewById(R.id.fab) as FloatingActionButton
-		fab.setOnClickListener {
-  		...
-	}
+    fab.setOnClickListener {
+      ...
+    }
 	
 On-click listener in Java
 
 	FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-	fab.setOnClickListener(new View.OnClickListener() {
-  		@Override
-  		public void onClick(View view) {
-    	...
-  		}
-	});
+    fab.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        ...
+      }
+    });
 	
 Item click listener in Kotlin
 
 	private val mOnNavigationItemSelectedListener
-    = BottomNavigationView.OnNavigationItemSelectedListener { item ->
-  	when (item.itemId) {
-    	R.id.navigation_home -> {
-      		mTextMessage.setText(R.string.title_home)
-      		return@OnNavigationItemSelectedListener true
-    	}
-    	R.id.navigation_dashboard -> {
-      		mTextMessage.setText(R.string.title_dashboard)
-      		return@OnNavigationItemSelectedListener true
-    	}
- 	}
- 	false
-	}
+        = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+      when (item.itemId) {
+        R.id.navigation_home -> {
+          mTextMessage.setText(R.string.title_home)
+          return@OnNavigationItemSelectedListener true
+        }
+        R.id.navigation_dashboard -> {
+          mTextMessage.setText(R.string.title_dashboard)
+          return@OnNavigationItemSelectedListener true
+        }
+     }
+     false
+    }
 	
 Item click listener in Java
 
 	private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-    = new BottomNavigationView.OnNavigationItemSelectedListener() {
-  	@Override
-  	public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-    	switch (item.getItemId()) {
-      	case R.id.navigation_home:
-        	mTextMessage.setText(R.string.title_home);
-        	return true;
-      	case R.id.navigation_dashboard:
-        	mTextMessage.setText(R.string.title_dashboard);
-        	return true;
-    	}
-    	return false;
-  	}
-	};
+        = new BottomNavigationView.OnNavigationItemSelectedListener() {
+      @Override
+      public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+          case R.id.navigation_home:
+            mTextMessage.setText(R.string.title_home);
+            return true;
+          case R.id.navigation_dashboard:
+            mTextMessage.setText(R.string.title_dashboard);
+            return true;
+        }
+        return false;
+      }
+    };
