@@ -1,4 +1,4 @@
-Kotlin is fully supported in Android Studio 3.0 (get the canary version here), so it's easy to create new projects with Kotlin files, add Kotlin files to your existing project, and convert Java language code to Kotlin. You can then use of all Android Studio's existing tools with your Kotlin code, such as autocomplete, lint checker, refactoring, debugging, and more.
+Kotlin is fully supported in Android Studio 3.0, so it's easy to create new projects with Kotlin files, add Kotlin files to your existing project, and convert Java language code to Kotlin. You can then use of all Android Studio's existing tools with your Kotlin code, such as autocomplete, lint checker, refactoring, debugging, and more.
 <!--Android Studio 3.0 对Kotlin提供了支持，因此可以轻松地使用Kotlin文件创建新项目，将Kotlin文件添加到现有项目中，并将Java语言代码转换为Kotlin。然后，你可以在你的的Kotlin代码使用所有Android Studio的现有工具，如自动完成，lint检查，重构，调试等。-->
 
 
