@@ -1,9 +1,8 @@
 ---
 layout: post
 ---
-<img src="{{ site.baseurl }}/images/pic02.jpg">
 
-# Markdown grammer
+# Markdown grammar
 
 ![Mou icon](http://25.io/mou/Mou_128.png)
 
