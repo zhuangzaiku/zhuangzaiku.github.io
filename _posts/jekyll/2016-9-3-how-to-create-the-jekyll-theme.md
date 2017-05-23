@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一步一步创建Jekyll主题
+title: How to create the jekyll theme
 categories: jekyll
 image: jekyll.jpg
 date: 2016-9-3 15:47:05

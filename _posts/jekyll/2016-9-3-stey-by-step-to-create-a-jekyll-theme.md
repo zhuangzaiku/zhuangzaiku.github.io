@@ -1,6 +1,6 @@
 ---
 layout: post
-title: step by step to create a jekyll theme
+title: Step by step to create a jekyll theme
 categories: jekyll
 image: jekyll.jpg
 date: 2016-9-3 15:47:05
