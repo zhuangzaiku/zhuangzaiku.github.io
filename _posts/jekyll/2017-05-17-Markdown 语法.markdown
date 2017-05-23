@@ -2,7 +2,7 @@
 layout: post
 title:  Markdown 语法
 date:   2017-05-17 18:07:16
-categories: jekyll
+categories: markdown
 pid: 20170517-180716
 image: jekyll.jpg
 pin: 4

@@ -2,7 +2,7 @@
 layout: post
 title:  在Android开发中使用Kotlin
 date:   2017-05-18 13:07:16
-categories: jekyll
+categories: kotlin
 pid: 20170518-130716
 image: jekyll.jpg
 pin: 5

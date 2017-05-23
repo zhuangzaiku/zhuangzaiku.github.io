@@ -70,10 +70,10 @@
       },
 
       comments: function(text, threadKey, shortName) {
-        if (! this.getArguments(arguments)){
-          return false;
-        }
-        this.getResult(this.calling);
+        // if (! this.getArguments(arguments)){
+        //   return false;
+        // }
+        // this.getResult(this.calling);
       },
 
       likes: function(text, threadKey, shortName) {
